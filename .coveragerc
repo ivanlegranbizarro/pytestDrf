@@ -1,0 +1,29 @@
+# .coveragerc to control coverage.py
+[run]
+source = .
+omit =
+   *venv/*
+   *venv/bin/*
+   *venv/include/*
+   *venv/lib/*
+   *manage.py
+   */settings.py
+   */local_settings.py
+   */tests/*
+   *apps.py
+   *migrations/*
+   *admin.py
+   *asgi.py
+   *wsgi.py
+   classroom/migrations/*
+
+   *__init__*
+   */__pycache__/*
+   */site-packages/*
+   */distutils/*
+
+
+[report]
+#fail_under = 100
+show_missing = True
+#skip_covered = True
